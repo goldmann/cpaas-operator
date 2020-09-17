@@ -1,0 +1,7 @@
+apiVersion: cpaas.redhat.com/v1alpha1
+kind: Builder
+metadata:
+  name: builder-sample
+spec:
+  # Add fields here
+  foo: bar

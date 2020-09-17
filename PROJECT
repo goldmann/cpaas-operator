@@ -1,7 +1,11 @@
-domain: cpaas.redhat.com
+domain: redhat.com
 layout: go.kubebuilder.io/v2
 projectName: cpaas-operator
-repo: github.com/cpaas/cpaas-operator
+repo: github.com/goldmann/cpaas-operator
+resources:
+- group: cpaas
+  kind: Builder
+  version: v1alpha1
 version: 3-alpha
 plugins:
   go.sdk.operatorframework.io/v2-alpha: {}
