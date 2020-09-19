@@ -1,7 +1,6 @@
 apiVersion: cpaas.redhat.com/v1alpha1
 kind: Builder
 metadata:
-  name: builder-sample
+  name: pig
 spec:
-  # Add fields here
-  foo: bar
+  image: "quay.io/goldmann/cpaas-poc-executor:latest"

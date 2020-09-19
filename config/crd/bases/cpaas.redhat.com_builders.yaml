@@ -36,9 +36,10 @@ spec:
         spec:
           description: BuilderSpec defines the desired state of Builder
           properties:
-            foo:
-              description: Foo is an example field of Builder. Edit Builder_types.go
-                to remove/update
+            image:
+              description: The image name that implements the builder logic.
+              type: string
+            name:
               type: string
           type: object
         status:

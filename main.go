@@ -29,6 +29,7 @@ import (
 
 	cpaasv1alpha1 "github.com/goldmann/cpaas-operator/api/v1alpha1"
 	"github.com/goldmann/cpaas-operator/controllers"
+	pipelinev1beta1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
 	// +kubebuilder:scaffold:imports
 )
 
@@ -41,6 +42,7 @@ func init() {
 	utilruntime.Must(clientgoscheme.AddToScheme(scheme))
 
 	utilruntime.Must(cpaasv1alpha1.AddToScheme(scheme))
+	utilruntime.Must(pipelinev1beta1.AddToScheme(scheme))
 	// +kubebuilder:scaffold:scheme
 }
 
